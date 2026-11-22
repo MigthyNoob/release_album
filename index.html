@@ -7,16 +7,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>ap2ex-release</title>
 </head>
-<body>
-    <main class="grid grid-rows-4 gap-4">
-        <header class="row">Logog image here</header>
-        <div class="row">
-            <!-- content 1 -->
+<body class="bg-black text-[#af6527] uppercase select-none font-sans text-lg antialiased md:subpixel-antialiased font-semibold tracking-wide text-base/6">
+    <main class="grid grid-rows-5 gap-4 m-12">
+        <header class="row flex items-center justify-center mb-8 mt-8">
+            <div class="w-44 h-44 rounded-full bg-black" style="filter: drop-shadow(0 0 10px #af6527);"></div>
+        </header>
+        <div class="row w-full bg-[#111111de] border-x-[#e27e31] border-y-[#af6527] border border-solid border-transparent rounded-xl">
+            <div class="block p-4 w-full h-full flex flex-col flex-center flex-wrap justify-around gap-4">
+                <div class="flex flex-row flex-wrap gap-2">
+
+                <img src="icons/soundcloud.svg" alt="SoundCloud" width="64" height="64">
+                <music-player src="assets/track.mp3"></music-player>
+                </div>
+                <div class="flex flex-row flex-wrap gap-2"><img src="icons/ytmusic.svg" alt="Youtube Music" width="64" height="64">
+                <music-player src="assets/track.mp3"></music-player></div>
+            </div>
         </div>
-        <div class="row">
-            <!-- content 2 -->
+        <div class="row w-full bg-[#111111de] border-x-[#e27e31] border-y-[#af6527] border border-solid border-transparent rounded-xl">
+            <div class="block p-4 w-full h-full flex flex-col flex-center flex-wrap justify-around content-center gap-4">
+                <h2 class="text-2xl">Бонуси</h2>
+                <a class="hover:text-[#e27e31] border-b border-b-[#af6527] solid" href="#">Туди</a>
+                <a class="hover:text-[#e27e31] border-b border-b-[#af6527] solid" href="#">Сюди</a>
+            </div>
         </div>
-        <footer class="row">Контакти</footer>
+        <footer class="row flex items-center justify-center"><h4 class="underline underline-offset-8 decoration-double decoration-4">Контакти</h4></footer>
     </main>
     <script src="js/main.js"></script>
 </body>
