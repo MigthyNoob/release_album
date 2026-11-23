@@ -23,7 +23,7 @@ template.innerHTML = `
         width: 100%;
         padding: 1rem;
         background: #111111de;
-        border-radius: 0.75rem;
+        border-radius: 2.75rem;
     }
 
     .play {
@@ -63,11 +63,11 @@ template.innerHTML = `
 </style>
 
 <div class="player" role="group" aria-label="Музичний програвач">
-    <button class="play" type="button" aria-label="Відтворити">${playIcon}</button>
-
     <div class="timeline">
         <input class="seek" type="range" min="0" max="0" value="0" disabled aria-hidden="true">
     </div>
+
+    <button class="play" type="button" aria-label="Відтворити">${playIcon}</button>
 </div>
 `;
 
