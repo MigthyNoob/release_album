@@ -7,6 +7,7 @@ python -m http.server 8000
 ```
 
 # Tech
-- Vanilla JS
-- Web Components
+- Vanilla JS.
+- Web Components.
+
 Keep it that way.
