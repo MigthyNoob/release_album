@@ -3,7 +3,7 @@ A small web app, hosted on github-pages to anounce/promote new album release.
 
 # Development
 ```zsh
-python -m http.server 8000
+deno run -RN jsr:@std/http/file-server --host 127.0.0.1 --port 8000
 ```
 
 # Tech
