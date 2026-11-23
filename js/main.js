@@ -1,4 +1,5 @@
-const playIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+const playIcon =
+  '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
 
 const template = document.createElement("template");
 template.innerHTML = `
@@ -72,21 +73,22 @@ template.innerHTML = `
 `;
 
 class MusicPlayer extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-        this.shadowRoot.querySelector(".play").addEventListener("click", () => this._redirect());
-    }
+    this.shadowRoot
+      .querySelector(".play")
+      .addEventListener("click", () => this._redirect());
+  }
 
-    _redirect() {
-        const url = this.getAttribute("src") || this.getAttribute("href");
-      if (url) window.open(url, "_blank");
-
-    }
+  _redirect() {
+    const url = this.getAttribute("src") || this.getAttribute("href");
+    if (url) window.open(url, "_blank");
+  }
 }
 
 if (!customElements.get("music-player")) {
-    customElements.define("music-player", MusicPlayer);
+  customElements.define("music-player", MusicPlayer);
 }
